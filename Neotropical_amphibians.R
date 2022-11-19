@@ -11,27 +11,27 @@ matrix[is.na(matrix) | matrix == "Inf"] <- NA # Replace NaN & Inf with NA
 library(ggplot2)
 library(ggpubr)
 
-library(visdat)
-library(tidyverse)
-library(lattice)
-library(DHARMa)
-library(performance)
-library(MuMIn)
-library(piecewiseSEM)
-library(MASS)
-library(ggExtra)
-library(Rmisc)
-library(emmeans)
-library(sjPlot)
-library(bbmle)
-library(glmmTMB)
-library(ordinal)
-library(car)
-library(ecolottery)
-library(naniar)
-library(vcd)
-library(gvlma)
-library(generalhoslem)
+#library(visdat)
+#library(tidyverse)
+#library(lattice)
+#library(DHARMa)
+#library(performance)
+#library(MuMIn)
+#library(piecewiseSEM)
+#library(MASS)
+#library(ggExtra)
+#library(Rmisc)
+#library(emmeans)
+#library(sjPlot)
+#library(bbmle)
+#library(glmmTMB)
+#library(ordinal)
+#library(car)
+#library(ecolottery)
+#library(naniar)
+#library(vcd)
+#library(gvlma)
+#library(generalhoslem)
 library(randomForest)
 
 #Density of Nucleotide Diversity
@@ -53,8 +53,7 @@ anova(size)
 
 pi_size <- ggplot(matrix, aes(x=(Body_size_mm), y=pi,  shape=Order, fill=Order))+
   geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Body size (mm)", 
-                                                             y="Genetic diversity (pi)")+
-  theme_minimal()
+             y="Genetic diversity (pi)")+theme_minimal()
 
 coeff=coefficients(size)
 coeff
@@ -83,8 +82,7 @@ eq = paste0("y = ", coeff[2],1, "*x + ", coeff[1],1)
 # Plot
 # Change line type, color and size
 anu_pi_size + geom_abline(intercept = 2.922940e-02, slope = -3.657869e-05, 
-                      linetype="dashed", size=0.5)+
-  ggtitle(eq)
+                      linetype="dashed", size=0.5)+ ggtitle(eq)
 
 ###############################
 ##Caudata
@@ -95,8 +93,7 @@ summary(ca1)
 
 cau_pi_size <- ggplot(caudata, aes(x=(Body_size_mm), y=pi, shape=Order, fill=Order))+
   geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Body size (mm)", 
-  y="Genetic diversity (pi)")+
-  theme_minimal()
+  y="Genetic diversity (pi)")+  theme_minimal()
 
 coeff=coefficients(ca1)
 coeff
@@ -105,9 +102,7 @@ eq = paste0("y = ", coeff[2],1, "*x + ", coeff[1],1)
 # Plot
 # Change line type, color and size
 cau_pi_size + geom_abline(intercept = 0.0078384058, slope = 0.0001417394, 
-                          linetype="dashed", size=0.5)+
-  ggtitle(eq)
-
+                          linetype="dashed", size=0.5)+  ggtitle(eq)
 
 all1 <- pi_size + geom_abline(intercept = 2.793722e-02, slope = -1.953164e-05, 
                           linetype="dashed", size=0.5)+ggtitle(eq)
@@ -337,7 +332,7 @@ anova(am_minel)
 summary(am_minel)
 
 amminele <- ggplot(matrix, aes(x=Elevation_min, y=pi, shape=Order, fill=Order))+
-  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Min Elevation",                           y="Genetic diversity (pi)")+ theme_minimal()
+  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Min Elevation", y="Genetic diversity (pi)")+ theme_minimal()
 coeff=coefficients(am_minel)
 coeff
 # Equation of the line : 
@@ -353,7 +348,7 @@ anova(an_minel)
 summary(an_minel)
 
 anminele <- ggplot(anura, aes(x=Elevation_min, y=pi, shape=Order, fill=Order))+
-  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Min Elevation",                           y="Genetic diversity (pi)")+ theme_minimal()
+  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Min Elevation", y="Genetic diversity (pi)")+ theme_minimal()
 coeff=coefficients(an_minel)
 coeff
 # Equation of the line : 
@@ -369,7 +364,7 @@ anova(ca_minel)
 summary(ca_minel)
 
 caminele <- ggplot(caudata, aes(x=Elevation_min, y=pi, shape=Order, fill=Order))+
-  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Min Elevation",                           y="Genetic diversity (pi)")+ theme_minimal()
+  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Min Elevation", y="Genetic diversity (pi)")+ theme_minimal()
 coeff=coefficients(ca_minel)
 coeff
 # Equation of the line : 
@@ -388,7 +383,7 @@ anova(am_maxel)
 summary(am_maxel)
 
 ammaxele <- ggplot(matrix, aes(x=Elevation_max, y=pi, shape=Order, fill=Order))+
-  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Max Elevation",                           y="Genetic diversity (pi)")+ theme_minimal()
+  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Max Elevation", y="Genetic diversity (pi)")+ theme_minimal()
 coeff=coefficients(am_maxel)
 coeff
 # Equation of the line : 
@@ -524,7 +519,7 @@ anova(ca_ilat)
 summary(ca_ilat)
 
 caminlat <- ggplot(caudata, aes(x=Lat_realmin, y=pi, shape=Order, fill=Order))+
-  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Min Latitude",          y="Genetic diversity (pi)")+ theme_minimal()
+  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Min Latitude",  y="Genetic diversity (pi)")+ theme_minimal()
 coeff=coefficients(ca_ilat)
 coeff
 # Equation of the line : 
@@ -576,7 +571,7 @@ ca_xlat <- lm(pi ~ Lat_realmax, data=caudata)
 anova(ca_xlat)
 summary(ca_xlat)
 caxlat <- ggplot(caudata, aes(x=Lat_realmax, y=pi, shape=Order, fill=Order))+
-  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Max Latitude",          y="Genetic diversity (pi)")+  theme_minimal()
+  geom_point(size=5, color="black",shape=21, alpha=0.7)+labs(x="Max Latitude", y="Genetic diversity (pi)")+  theme_minimal()
 coeff=coefficients(ca_xlat)
 coeff
 # Equation of the line : 
@@ -776,8 +771,6 @@ ggplot(matrix,aes(log(x=Area_km2),y=pi,fill=Elevation_min))+
   geom_point(color="black",size=5,shape=21,alpha=0.7)+
   scale_fill_viridis_c()+theme_bw()
 
-
-
 #Anura
 ggplot(anura,aes(x=Lat_mean,y=pi,fill=Area_km2))+
   geom_point(color="black",size=5,shape=21,alpha=0.7)+ 
@@ -794,7 +787,6 @@ ggplot(anura,aes(x=Elevation_min,y=pi,fill=Area_km2))+
 ggplot(anura,aes(log(x=Area_km2),y=pi,fill=Elevation_min))+
   geom_point(color="black",size=5,shape=21,alpha=0.7)+
   scale_fill_viridis_c()+theme_bw()
-
 
 #Caudata
 ggplot(caudata,aes(x=Lat_mean,y=pi,fill=Area_km2))+
@@ -816,36 +808,12 @@ ggplot(caudata,aes(log(x=Area_km2),y=Lat_mean,fill=pi))+
 ##Multiple linear regression
 mlr1 <- lm(pi ~ Lat_mean + Area_km2, data = matrix)
 summary(mlr1)
-#Coefficients:
-# Estimate Std. Error t value Pr(>|t|)    
-#(Intercept) 2.539e-02  2.126e-03  11.943   <2e-16 ***
-#  Lat_mean    1.151e-04  1.054e-04   1.092   0.2760    
-#Area_km2    3.433e-09  1.207e-09   2.845   0.0048 ** 
-#Residual standard error: 0.03202 on 253 degrees of freedom
-#Multiple R-squared:  0.03499,	Adjusted R-squared:  0.02736 
-#F-statistic: 4.587 on 2 and 253 DF,  p-value: 0.01104
 
 mlr2 <- lm(pi ~ Area_km2 + Lat_mean, data = anura)
 summary(mlr2)
-#Coefficients:
-#Estimate Std. Error t value Pr(>|t|)    
-#(Intercept) 2.624e-02  2.377e-03  11.040  < 2e-16 ***
-#  Area_km2    3.285e-09  1.257e-09   2.614  0.00955 ** 
-#  Lat_mean    1.378e-04  1.146e-04   1.202  0.23060    
-#Residual standard error: 0.03317 on 227 degrees of freedom
-#Multiple R-squared:  0.03553,	Adjusted R-squared:  0.02703 
-#F-statistic: 4.181 on 2 and 227 DF,  p-value: 0.01648
 
 mlr3 <- lm(pi ~ Area_km2 + Lat_mean, data = caudata)
 summary(mlr3)
-#Coefficients:
-# Estimate Std. Error t value Pr(>|t|)  
-#(Intercept) 3.269e-03  8.889e-03   0.368   0.7164  
-#Area_km2    1.395e-07  6.214e-08   2.244   0.0347 *
-#  Lat_mean    1.078e-03  6.036e-04   1.786   0.0873 .
-#Residual standard error: 0.01659 on 23 degrees of freedom
-#Multiple R-squared:  0.2924,	Adjusted R-squared:  0.2309 
-#F-statistic: 4.752 on 2 and 23 DF,  p-value: 0.01873
 
 #Interaction
 mlr4 <- lm(pi ~ Area_km2 + Lat_mean + Area_km2:Lat_mean, data = anura)
@@ -855,10 +823,7 @@ mlr5 <- lm(pi ~ Area_km2 + Lat_mean + Area_km2:Lat_mean, data = caudata)
 summary(mlr5)
 
 
-
-
 ##################Nucleotide diversity#################
-
 
 ###IMPORT SEQUENCE DATA
 #setwd("~/Downloads/phylogatr-results/Amphibia/")
@@ -900,9 +865,6 @@ upper_boud
 outliers <- which(data$pi < lower_bound | data$pi > upper_boud)
 data[outliers,]
 
-# nucleotide diversity Is defined as the average number of #nucleotide differences per site in pairwise comparisons among DNA sequences
-
-
 
 ##################Random Forests###########################
 ###########################################################
@@ -937,11 +899,9 @@ varImpPlot(fit_1)
 ## Look at variable importance:
 round(importance(fit_1), 2)
 
-
 fit_1$importance
 fit_1$importanceSD
 fit_1$y
-
 
 #####Anura random forests######
 names(anura) <- c("Species_name","pi","Microhabitat", 
@@ -977,7 +937,6 @@ importance(rf_A, type = 2)
 round(importance(rf_A))
 round(importance(rf_A, 1))
 varImpPlot(rf_A)
-
 
 #####Caudata random forests######
 names(caudata) <- c("Species_name","pi","Microhabitat", 
@@ -1303,10 +1262,6 @@ my.pi <- read.csv(file = "ordenar_data.txt", header=FALSE, sep = "", row.names =
 neot.tree <- read.newick(file = "neotropical_tree.newick")
 class(neot.tree)
 
-
-
-
-
 ## ContMap (phytools)
 
 ## extract character of interest
@@ -1324,11 +1279,7 @@ plot(AmphNeot.contMap,fsize=c(0.22,0.8),
      leg.txt="Nucleotide diversity",lwd=2.2, outline=FALSE, sig=2)
 par(mar=c(4.1,4.1,4.1,2.1)) ## reset margins to default
 
-
 phylosig(neot.tree, Nucleotide.diversity, nsim = 999, method = 'lambda')
 #Phylogenetic signal K : 0.109084 
 #Phylogenetic signal lambda : 0.614976 
 #logL(lambda) : 490.991
-
-
-
