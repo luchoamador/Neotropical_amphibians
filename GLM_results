@@ -1,0 +1,1055 @@
+#Generalized Linear Models for all amphibians. Response: nucleotide diversity (pi)
+
+##Body size##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.70
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -1023.49, BIC = -1012.85 
+
+Standard errors: MLE
+-------------------------------------------------
+                      Est.   S.E.   t val.      p
+------------------ ------- ------ -------- ------
+(Intercept)           0.03   0.00     8.64   0.00
+Body_size_mm         -0.00   0.00    -0.38   0.71
+-------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.57
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -903.12, BIC = -892.81 
+
+Standard errors: MLE
+-------------------------------------------------
+                      Est.   S.E.   t val.      p
+------------------ ------- ------ -------- ------
+(Intercept)           0.03   0.00     8.12   0.00
+Body_size_mm         -0.00   0.00    -0.56   0.57
+-------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+MODEL INFO:
+Observations: 26
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.04
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.03
+AIC = -131.88, BIC = -128.11 
+
+Standard errors: MLE
+------------------------------------------------
+                     Est.   S.E.   t val.      p
+------------------ ------ ------ -------- ------
+(Intercept)          0.01   0.01     1.07   0.29
+Body_size_mm         0.00   0.00     2.09   0.05
+------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+##Development Mode##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.80
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -1023.41, BIC = -1012.78 
+
+Standard errors: MLE
+--------------------------------------------------------
+                             Est.   S.E.   t val.      p
+------------------------- ------- ------ -------- ------
+(Intercept)                  0.03   0.00     7.45   0.00
+Development_ModeLar         -0.00   0.00    -0.26   0.80
+--------------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.40
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -903.52, BIC = -893.21 
+
+Standard errors: MLE
+--------------------------------------------------------
+                             Est.   S.E.   t val.      p
+------------------------- ------- ------ -------- ------
+(Intercept)                  0.03   0.00     6.56   0.00
+Development_ModeLar         -0.00   0.01    -0.85   0.40
+--------------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###All Caudata species are direct developers
+
+##Habitat##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(5) = 0.01, p = 0.15
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.01
+AIC = -1023.46, BIC = -998.64 
+
+Standard errors: MLE
+-------------------------------------------------------------
+                                  Est.   S.E.   t val.      p
+------------------------------ ------- ------ -------- ------
+(Intercept)                       0.01   0.01     1.59   0.11
+Microhabitatarboreal              0.02   0.01     1.64   0.10
+Microhabitatburrowing             0.00   0.03     0.09   0.93
+Microhabitatsemiaquatic          -0.00   0.01    -0.05   0.96
+Microhabitatsemiarboreal          0.02   0.01     2.00   0.05
+Microhabitatterrestrial           0.01   0.01     1.10   0.27
+-------------------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: OLS linear regression 
+
+MODEL FIT:
+F(5,224) = 2.50, p = 0.03
+R² = 0.05
+Adj. R² = 0.03 
+
+Standard errors: OLS
+-------------------------------------------------------------
+                                  Est.   S.E.   t val.      p
+------------------------------ ------- ------ -------- ------
+(Intercept)                       0.01   0.01     1.55   0.12
+Microhabitatarboreal              0.02   0.01     1.64   0.10
+Microhabitatburrowing             0.00   0.03     0.09   0.93
+Microhabitatsemiaquatic          -0.00   0.01    -0.05   0.96
+Microhabitatsemiarboreal          0.03   0.01     2.58   0.01
+Microhabitatterrestrial           0.01   0.01     1.06   0.29
+-------------------------------------------------------------
+
+###Caudata
+MODEL INFO:
+Observations: 26
+Dependent Variable: pi
+Type: OLS linear regression 
+
+MODEL FIT:
+F(2,23) = 1.57, p = 0.23
+R² = 0.12
+Adj. R² = 0.04 
+
+Standard errors: OLS
+-------------------------------------------------------------
+                                  Est.   S.E.   t val.      p
+------------------------------ ------- ------ -------- ------
+(Intercept)                       0.03   0.01     2.40   0.02
+Microhabitatsemiarboreal         -0.01   0.01    -1.03   0.31
+Microhabitatterrestrial           0.00   0.01     0.07   0.95
+-------------------------------------------------------------
+
+##Activity##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.97
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -1023.35, BIC = -1012.71 
+
+Standard errors: MLE
+-----------------------------------------------------
+                          Est.   S.E.   t val.      p
+----------------------- ------ ------ -------- ------
+(Intercept)               0.03   0.00     8.63   0.00
+ActivityNocturnal         0.00   0.00     0.04   0.97
+-----------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: OLS linear regression 
+
+MODEL FIT:
+F(1,228) = 0.10, p = 0.75
+R² = 0.00
+Adj. R² = -0.00 
+
+Standard errors: OLS
+-----------------------------------------------------
+                          Est.   S.E.   t val.      p
+----------------------- ------ ------ -------- ------
+(Intercept)               0.03   0.00     8.33   0.00
+ActivityNocturnal         0.00   0.00     0.31   0.75
+-----------------------------------------------------
+
+###All Caudata species are nocturnal in our dataset
+
+##Number of sequences##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.01, p = 0.01
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.01
+AIC = -1029.60, BIC = -1018.96 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.02   0.00    10.02   0.00
+Seqs                0.00   0.00     2.51   0.01
+-----------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.01, p = 0.02
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.01
+AIC = -908.60, BIC = -898.29 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.02   0.00     9.31   0.00
+Seqs                0.00   0.00     2.41   0.02
+-----------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+MODEL INFO:
+Observations: 26
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.48
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -128.10, BIC = -124.32 
+
+Standard errors: MLE
+------------------------------------------------
+                     Est.   S.E.   t val.      p
+----------------- ------- ------ -------- ------
+(Intercept)          0.02   0.00     4.86   0.00
+Seqs                -0.00   0.00    -0.71   0.48
+------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+##Mean Elevation##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.09
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -1026.25, BIC = -1015.62 
+
+Standard errors: MLE
+---------------------------------------------------
+                        Est.   S.E.   t val.      p
+-------------------- ------- ------ -------- ------
+(Intercept)             0.03   0.00    10.09   0.00
+Elevation_mean         -0.00   0.00    -1.70   0.09
+---------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.21
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -904.35, BIC = -894.04 
+
+Standard errors: MLE
+---------------------------------------------------
+                        Est.   S.E.   t val.      p
+-------------------- ------- ------ -------- ------
+(Intercept)             0.03   0.00     9.39   0.00
+Elevation_mean         -0.00   0.00    -1.24   0.22
+---------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+MODEL INFO:
+Observations: 26
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.19
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.01
+AIC = -129.34, BIC = -125.56 
+
+Standard errors: MLE
+---------------------------------------------------
+                        Est.   S.E.   t val.      p
+-------------------- ------- ------ -------- ------
+(Intercept)             0.03   0.01     3.29   0.00
+Elevation_mean         -0.00   0.00    -1.30   0.20
+---------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+##Minimum Elevation##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.01, p = 0.00
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.01
+AIC = -1035.27, BIC = -1024.64 
+
+Standard errors: MLE
+--------------------------------------------------
+                       Est.   S.E.   t val.      p
+------------------- ------- ------ -------- ------
+(Intercept)            0.03   0.00    13.07   0.00
+Elevation_min         -0.00   0.00    -3.48   0.00
+--------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.01, p = 0.00
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.01
+AIC = -911.37, BIC = -901.05 
+
+Standard errors: MLE
+--------------------------------------------------
+                       Est.   S.E.   t val.      p
+------------------- ------- ------ -------- ------
+(Intercept)            0.03   0.00    12.21   0.00
+Elevation_min         -0.00   0.00    -2.94   0.00
+--------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+MODEL INFO:
+Observations: 26
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.01
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.05
+AIC = -133.76, BIC = -129.98 
+
+Standard errors: MLE
+--------------------------------------------------
+                       Est.   S.E.   t val.      p
+------------------- ------- ------ -------- ------
+(Intercept)            0.03   0.01     5.58   0.00
+Elevation_min         -0.00   0.00    -2.54   0.02
+--------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+##Maximum Elevation##
+###Amphibians
+MODEL INFO:
+Observations: 241 (15 missing obs. deleted)
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.99
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -958.14, BIC = -947.69 
+
+Standard errors: MLE
+--------------------------------------------------
+                       Est.   S.E.   t val.      p
+------------------- ------- ------ -------- ------
+(Intercept)            0.03   0.00     7.57   0.00
+Elevation_max         -0.00   0.00    -0.01   0.99
+--------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 216 (14 missing obs. deleted)
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.74
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -843.35, BIC = -833.22 
+
+Standard errors: MLE
+-------------------------------------------------
+                      Est.   S.E.   t val.      p
+------------------- ------ ------ -------- ------
+(Intercept)           0.03   0.00     7.09   0.00
+Elevation_max         0.00   0.00     0.34   0.74
+-------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+MODEL INFO:
+Observations: 25 (1 missing obs. deleted)
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.74
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -121.97, BIC = -118.32 
+
+Standard errors: MLE
+-------------------------------------------------
+                      Est.   S.E.   t val.      p
+------------------- ------ ------ -------- ------
+(Intercept)           0.02   0.01     1.19   0.25
+Elevation_max         0.00   0.00     0.33   0.75
+-------------------------------------------------
+
+Estimated dispersion parameter = 0
+
+##Mean Latitude##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.31
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -1024.40, BIC = -1013.77 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.03   0.00    13.31   0.00
+Lat_mean            0.00   0.00     1.03   0.31
+-----------------------------------------------
+
+Estimated dispersion parameter = 0
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.22
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -904.30, BIC = -893.99 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.03   0.00    12.43   0.00
+Lat_mean            0.00   0.00     1.22   0.22
+-----------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+MODEL INFO:
+Observations: 26
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.05
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.03
+AIC = -131.40, BIC = -127.62 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.00   0.01     0.39   0.70
+Lat_mean            0.00   0.00     1.96   0.06
+-----------------------------------------------
+
+Estimated dispersion parameter = 0
+
+##Minimum Latitude##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.52
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -1023.76, BIC = -1013.13 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.03   0.00    13.20   0.00
+Lat_realmin         0.00   0.00     0.64   0.52
+-----------------------------------------------
+
+Estimated dispersion parameter = 0
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.39
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -903.55, BIC = -893.23 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.03   0.00    12.22   0.00
+Lat_realmin         0.00   0.00     0.86   0.39
+-----------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+MODEL INFO:
+Observations: 26
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.04
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.03
+AIC = -131.69, BIC = -127.92 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.00   0.01     0.34   0.74
+Lat_realmin         0.00   0.00     2.04   0.05
+-----------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+##Maximum Latitude##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.19
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -1025.07, BIC = -1014.44 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.03   0.00    13.38   0.00
+Lat_realmax         0.00   0.00     1.31   0.19
+-----------------------------------------------
+
+Estimated dispersion parameter = 0
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.14
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -904.97, BIC = -894.66 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.03   0.00    12.56   0.00
+Lat_realmax         0.00   0.00     1.47   0.14
+-----------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+MODEL INFO:
+Observations: 26
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.07
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.03
+AIC = -130.90, BIC = -127.13 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.01   0.01     0.55   0.59
+Lat_realmax         0.00   0.00     1.82   0.08
+-----------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+##Species Range##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.03, p = 0.00
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.03
+AIC = -1054.61, BIC = -1043.97 
+
+Standard errors: MLE
+--------------------------------------------------
+                       Est.   S.E.   t val.      p
+------------------- ------- ------ -------- ------
+(Intercept)           -0.00   0.01    -0.46   0.65
+log(Area_km2)          0.00   0.00     5.74   0.00
+--------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.03, p = 0.00
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.03
+AIC = -929.14, BIC = -918.83 
+
+Standard errors: MLE
+--------------------------------------------------
+                       Est.   S.E.   t val.      p
+------------------- ------- ------ -------- ------
+(Intercept)           -0.00   0.01    -0.48   0.63
+log(Area_km2)          0.00   0.00     5.26   0.00
+--------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+MODEL INFO:
+Observations: 26
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.01
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.05
+AIC = -134.21, BIC = -130.44 
+
+Standard errors: MLE
+--------------------------------------------------
+                       Est.   S.E.   t val.      p
+------------------- ------- ------ -------- ------
+(Intercept)           -0.00   0.01    -0.24   0.81
+log(Area_km2)          0.00   0.00     2.65   0.01
+--------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+##Order##
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(1) = 0.00, p = 0.34
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.00
+AIC = -1024.26, BIC = -1013.62 
+
+Standard errors: MLE
+-------------------------------------------------
+                      Est.   S.E.   t val.      p
+------------------ ------- ------ -------- ------
+(Intercept)           0.03   0.00    12.90   0.00
+OrderCaudata         -0.01   0.01    -0.95   0.34
+-------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+##Family##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(17) = 0.05, p = 0.00
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.05
+AIC = -1047.65, BIC = -980.29 
+
+Standard errors: MLE
+--------------------------------------------------------------
+                                   Est.   S.E.   t val.      p
+------------------------------- ------- ------ -------- ------
+(Intercept)                        0.01   0.01     1.03   0.30
+FamilyAromobatidae                 0.02   0.01     1.71   0.09
+FamilyBatrachylidae                0.01   0.02     0.49   0.62
+FamilyBrachycephalidae             0.01   0.01     0.94   0.35
+FamilyBufonidae                    0.00   0.01     0.25   0.80
+FamilyCraugastoridae               0.06   0.01     4.44   0.00
+FamilyCycloramphidae               0.06   0.02     3.65   0.00
+FamilyDendrobatidae                0.03   0.01     2.89   0.00
+FamilyEleutherodactylidae          0.01   0.01     1.36   0.18
+FamilyHylidae                      0.03   0.01     2.74   0.01
+FamilyHylodidae                    0.03   0.03     1.03   0.30
+FamilyLeptodactylidae              0.03   0.01     2.71   0.01
+FamilyOdontophrynidae              0.05   0.02     2.36   0.02
+FamilyPlethodontidae               0.01   0.01     1.35   0.18
+FamilyRanidae                     -0.01   0.02    -0.25   0.81
+FamilyRhinodermatidae              0.00   0.03     0.04   0.97
+FamilyStrabomantidae               0.04   0.01     3.08   0.00
+FamilyTelmatobiidae               -0.00   0.01    -0.23   0.82
+--------------------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(16) = 0.05, p = 0.00
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.06
+AIC = -924.49, BIC = -862.61 
+
+Standard errors: MLE
+--------------------------------------------------------------
+                                   Est.   S.E.   t val.      p
+------------------------------- ------- ------ -------- ------
+(Intercept)                        0.01   0.01     1.00   0.32
+FamilyAromobatidae                 0.02   0.01     1.65   0.10
+FamilyBatrachylidae                0.01   0.02     0.47   0.64
+FamilyBrachycephalidae             0.01   0.01     0.91   0.36
+FamilyBufonidae                    0.00   0.01     0.25   0.81
+FamilyCraugastoridae               0.06   0.02     4.29   0.00
+FamilyCycloramphidae               0.06   0.02     3.53   0.00
+FamilyDendrobatidae                0.03   0.01     2.79   0.01
+FamilyEleutherodactylidae          0.01   0.01     1.31   0.19
+FamilyHylidae                      0.03   0.01     2.65   0.01
+FamilyHylodidae                    0.03   0.03     0.99   0.32
+FamilyLeptodactylidae              0.03   0.01     2.62   0.01
+FamilyOdontophrynidae              0.05   0.02     2.28   0.02
+FamilyRanidae                     -0.01   0.02    -0.24   0.81
+FamilyRhinodermatidae              0.00   0.03     0.03   0.97
+FamilyStrabomantidae               0.04   0.01     2.98   0.00
+FamilyTelmatobiidae               -0.00   0.02    -0.22   0.82
+--------------------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+All Caudata species in our dataset belong to family Plethodontidae
+
+##Conservation Status##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(7) = 0.02, p = 0.00
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.02
+AIC = -1034.50, BIC = -1002.59 
+
+Standard errors: MLE
+------------------------------------------------
+                     Est.   S.E.   t val.      p
+----------------- ------- ------ -------- ------
+(Intercept)          0.01   0.01     2.05   0.04
+IUCNDD               0.01   0.01     0.71   0.48
+IUCNEN               0.01   0.01     0.62   0.53
+IUCNEX              -0.01   0.03    -0.33   0.75
+IUCNLC               0.02   0.01     2.86   0.00
+IUCNNE              -0.00   0.01    -0.26   0.80
+IUCNNT               0.01   0.01     0.47   0.64
+IUCNVU               0.01   0.01     0.52   0.60
+------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(7) = 0.02, p = 0.00
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.02
+AIC = -910.98, BIC = -880.04 
+
+Standard errors: MLE
+------------------------------------------------
+                     Est.   S.E.   t val.      p
+----------------- ------- ------ -------- ------
+(Intercept)          0.02   0.01     2.02   0.05
+IUCNDD               0.01   0.01     0.51   0.61
+IUCNEN               0.00   0.01     0.38   0.70
+IUCNEX              -0.01   0.03    -0.36   0.72
+IUCNLC               0.02   0.01     2.44   0.02
+IUCNNE              -0.00   0.01    -0.37   0.71
+IUCNNT               0.01   0.01     0.45   0.66
+IUCNVU               0.00   0.01     0.28   0.78
+------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+MODEL INFO:
+Observations: 26
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(5) = 0.00, p = 0.43
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.04
+AIC = -125.22, BIC = -116.41 
+
+Standard errors: MLE
+-----------------------------------------------
+                    Est.   S.E.   t val.      p
+----------------- ------ ------ -------- ------
+(Intercept)         0.01   0.01     0.52   0.61
+IUCNEN              0.01   0.01     1.16   0.26
+IUCNLC              0.02   0.01     1.85   0.08
+IUCNNE              0.00   0.02     0.15   0.88
+IUCNNT              0.00   0.02     0.05   0.96
+IUCNVU              0.03   0.02     1.15   0.26
+-----------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+##Biogeographic Unit##
+###Amphibians
+MODEL INFO:
+Observations: 256
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(14) = 0.03, p = 0.02
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.03
+AIC = -1024.73, BIC = -968.01 
+
+Standard errors: MLE
+------------------------------------------------------------------------
+                                             Est.   S.E.   t val.      p
+----------------------------------------- ------- ------ -------- ------
+(Intercept)                                  0.03   0.00     7.42   0.00
+Biogeographic_UnitAndes                     -0.01   0.01    -1.48   0.14
+Biogeographic_UnitAntillean                 -0.01   0.01    -1.92   0.06
+Biogeographic_UnitAtlantic_forest           -0.00   0.01    -0.00   1.00
+Biogeographic_UnitCerrado                   -0.01   0.01    -1.07   0.28
+Biogeographic_UnitChaco                     -0.03   0.02    -1.10   0.27
+Biogeographic_UnitChilean_Valdivian         -0.02   0.01    -2.21   0.03
+Biogeographic_UnitMesoamerica               -0.00   0.01    -0.68   0.50
+Biogeographic_UnitMexicanTZ                 -0.01   0.01    -1.17   0.24
+Biogeographic_UnitMonte                     -0.02   0.03    -0.70   0.48
+Biogeographic_UnitNorth_Ven_Col             -0.01   0.02    -0.55   0.58
+Biogeographic_UnitOrinoco                   -0.02   0.03    -0.75   0.45
+Biogeographic_UnitPampas                    -0.01   0.01    -0.53   0.59
+Biogeographic_UnitPatagonia                 -0.03   0.02    -1.41   0.16
+Biogeographic_UnitT_Ch_M                     0.03   0.01     3.01   0.00
+------------------------------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Anura
+MODEL INFO:
+Observations: 230
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(14) = 0.03, p = 0.03
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.03
+AIC = -902.28, BIC = -847.27 
+
+Standard errors: MLE
+------------------------------------------------------------------------
+                                             Est.   S.E.   t val.      p
+----------------------------------------- ------- ------ -------- ------
+(Intercept)                                  0.03   0.00     7.19   0.00
+Biogeographic_UnitAndes                     -0.01   0.01    -1.49   0.14
+Biogeographic_UnitAntillean                 -0.01   0.01    -1.90   0.06
+Biogeographic_UnitAtlantic_forest           -0.00   0.01    -0.07   0.94
+Biogeographic_UnitCerrado                   -0.01   0.01    -1.07   0.29
+Biogeographic_UnitChaco                     -0.03   0.02    -1.08   0.28
+Biogeographic_UnitChilean_Valdivian         -0.02   0.01    -2.18   0.03
+Biogeographic_UnitMesoamerica               -0.00   0.01    -0.47   0.64
+Biogeographic_UnitMexicanTZ                 -0.01   0.02    -0.31   0.76
+Biogeographic_UnitMonte                     -0.02   0.03    -0.69   0.49
+Biogeographic_UnitNorth_Ven_Col              0.00   0.02     0.02   0.99
+Biogeographic_UnitOrinoco                   -0.02   0.03    -0.74   0.46
+Biogeographic_UnitPampas                    -0.01   0.01    -0.55   0.59
+Biogeographic_UnitPatagonia                 -0.03   0.02    -1.38   0.17
+Biogeographic_UnitT_Ch_M                     0.03   0.01     2.86   0.00
+------------------------------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+###Caudata
+MODEL INFO:
+Observations: 26
+Dependent Variable: pi
+Type: Linear regression 
+
+MODEL FIT:
+χ²(3) = 0.00, p = 0.56
+Pseudo-R² (Cragg-Uhler) = -0.00
+Pseudo-R² (McFadden) = -0.02
+AIC = -125.89, BIC = -119.60 
+
+Standard errors: MLE
+--------------------------------------------------------------------
+                                         Est.   S.E.   t val.      p
+------------------------------------- ------- ------ -------- ------
+(Intercept)                              0.01   0.02     0.46   0.65
+Biogeographic_UnitMesoamerica            0.02   0.02     0.80   0.43
+Biogeographic_UnitMexicanTZ              0.01   0.02     0.58   0.57
+Biogeographic_UnitNorth_Ven_Col         -0.01   0.03    -0.33   0.75
+--------------------------------------------------------------------
+
+Estimated dispersion parameter = 0 
+
+
+
+
+
+
+
+
+
+
+
