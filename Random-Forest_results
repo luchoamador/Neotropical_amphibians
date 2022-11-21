@@ -1,0 +1,66 @@
+#Random Forest results - Neotropical Amphibians
+##Amphibians
+randomForest(formula = pi ~ ., data = df, proximity = TRUE, importance = TRUE,      ntree = 1000, nPerm = 10) 
+               Type of random forest: regression
+                     Number of trees: 1000
+No. of variables tried at each split: 4
+
+          Mean of squared residuals: 0.0009532331
+                    % Var explained: 9.24
+					
+                   %IncMSE IncNodePurity
+Microhabitat          1.08          0.01
+Activity              3.95          0.00
+Body_size_mm          9.58          0.03
+Development_Mode     13.89          0.01
+Seqs                  1.41          0.02
+Elevation_min        13.49          0.03
+Lat_mean              7.11          0.02
+Area_km2             33.24          0.06
+Order                 4.16          0.00
+Family               16.99          0.03
+Biogeographic_Unit   14.67          0.02
+IUCN                 12.45          0.01
+
+##Anura
+ randomForest(formula = pi ~ ., data = df_A, proximity = TRUE,      importance = TRUE, ntree = 1000, nPerm = 10) 
+               Type of random forest: regression
+                     Number of trees: 1000
+No. of variables tried at each split: 3
+
+          Mean of squared residuals: 0.001015841
+                    % Var explained: 9.77
+
+                     %IncMSE IncNodePurity
+Microhabitat        2.815322   0.006921332
+Activity            3.293066   0.003009662
+Body_size_mm        9.756429   0.027289886
+Development_Mode   13.416926   0.006242541
+Seqs                1.424135   0.024233615
+Elevation_min      10.651288   0.025286581
+Lat_mean            6.066790   0.023661767
+Area_km2           26.302372   0.051035545
+Family             15.816472   0.023444942
+Biogeographic_Unit 11.025440   0.024055939
+IUCN               10.612700   0.013375178
+
+##Caudata
+randomForest(formula = pi ~ ., data = df_C, proximity = TRUE,      importance = TRUE, ntree = 1000, nPerm = 10) 
+               Type of random forest: regression
+                     Number of trees: 1000
+No. of variables tried at each split: 3
+
+          Mean of squared residuals: 0.000257564
+                    % Var explained: 25.15
+					
+                       %IncMSE IncNodePurity
+Microhabitat       -0.03020318  0.0004730645
+Activity            0.00000000  0.0000000000
+Body_size_mm       13.02574119  0.0013826735
+Seqs                0.09351227  0.0004939604
+Elevation_min      15.60014828  0.0020523994
+Lat_mean           16.04914308  0.0016052129
+Area_km2            7.48031200  0.0012061556
+Biogeographic_Unit -2.35919905  0.0001438564
+IUCN                4.45852089  0.0003804182
+					
